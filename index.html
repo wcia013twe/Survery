@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Survey Form</title>
+        <link rel="stylesheet" href="styles.css"/>
+    </head>
+    <body>
+        <h1 id="title">freeCodeCamp Survey</h1>
+        <p id="description">Thank you for taking the time to help us improve the platform</p>
+        <form method="post" action="" id="survey-form">
+
+            <!-- Name, Email, Age -->
+             <fieldset>
+                <label id="name-label" for="name">Name</label>
+                <input required type="text" name="name" id="name" placeholder="Enter your name">
+                <label id="email-label" for="email">Email</label>
+                <input required type="text" name="email" id="email" placeholder="Enter your email">
+                <label id="number-label" for="age">age</label>
+                <input type="number" name="age" id="age" placeholder="age" min="0" max="100">
+             </fieldset>
+            
+
+
+             <fieldset>
+                <!-- Dropdown -->
+                <label for="role">Which option best describes your current role</p>
+                <select id="role" name="role">
+                    <option value="">Select current role</option>
+                    <option value="1">Student</option>
+                    <option value="2">Full Time Job</option>
+                    <option value="3">Full Time Learner</option>
+                    <option value="4">Prefer Not To Say</option>
+                    <option value="5">Other</option>
+                </select>
+
+                <legend>Would you recommend freeCodeCamp to a friend</legend>
+                <div class="inline-checked">
+                    <input for="definitely" type="radio" name="recommendation-type">Definitely</label>
+                    <input for="maybe" type="radio" name="recommendation-type">Maybe</label>
+                    <input for="not-sure" type="radio" name="recommendation-type">Not Sure</label>
+                </div>
+
+                <legend>What would you like to see improved? (Check all that apply)</legend>
+
+                <ul class="checkbox">
+                    <li>
+                        <input type="checkbox" name="improvement" value="front-end-projects">
+                        <span>Front-end Projects</span>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="improvement" value="back-end-projects">
+                        <span>Back-end Projects</span>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="improvement" value="data-visualization">
+                        <span>Data Visualization</span>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="improvement" value="challenges">
+                        <span>Challenges</span>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="improvement" value="open-source-community">
+                        <span>Open Source Community</span>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="improvement" value="gitter-help-rooms">
+                        <span>Gitter help rooms</span>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="improvement" value="videos">
+                        <span>Videos</span>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="improvement" value="city-meet-ups">
+                        <span>City Meetups</span>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="improvement" value="wiki">
+                        <span>Wiki</span>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="improvement" value="forum">
+                        <span>Forum</span>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="improvement" value="additional-courses">
+                        <span>Additional Courses</span>
+                    </li>
+                </ul>
+            
+             </fieldset>
+
+                             
+             <label for="comments">Any comments or suggestions?</label>
+             <textarea id="comments" name="comments" rows="3" cols="30" 
+                placeholder="Enter your commet here...">
+             </textarea>
+            
+             <input type="submit" value="submit" />
+            
+        </form>
+    </body>
+</html>
