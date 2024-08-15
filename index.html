@@ -19,17 +19,17 @@
                     </div>
                     <div class="input-div">
                         <label id="email-label" for="email">Email</label>
-                        <input required type="text" name="email" id="email" placeholder=" Enter your email">
+                        <input required type="email" name="email" id="email" placeholder=" Enter your email">
                     </div>
                     <div class="input-div">
                         <label id="number-label" for="age">Age (Optional)</label>
-                        <input type="number" name="age" id="age" placeholder=" Age" min="0" max="100">
+                        <input type="number" name="age" id="number" placeholder=" Age" min="0" max="100">
                     </div>
 
                     <!-- Dropdown -->
                     <div class="input-div">
                         <label for="role">Which option best describes your current role</p>
-                            <select id="role" name="role">
+                            <select id="dropdown" name="role">
                                 <option value="">Select current role</option>
                                 <option value="1">Student</option>
                                 <option value="2">Full Time Job</option>
@@ -43,13 +43,13 @@
                         <legend>Would you recommend freeCodeCamp to a friend</legend>
                         <div class="inline-checked">
                             <div class="radio-btn">
-                                <input for="definitely" type="radio" name="recommendation-type">  Definitely</label>
+                                <input for="definitely" type="radio" value="radio" name="recommendation-type">  Definitely</label>
                             </div>
                             <div class="radio-btn">
-                                <input for="maybe" type="radio" name="recommendation-type">  Maybe</label>
+                                <input for="maybe" type="radio" value="radio" name="recommendation-type">  Maybe</label>
                             </div>
                             <div class="radio-btn">
-                                <input for="not-sure" type="radio" name="recommendation-type">  Not Sure</label>
+                                <input for="not-sure" type="radio" value="radio" name="recommendation-type">  Not Sure</label>
                             </div>
                     
                         </div>
@@ -126,7 +126,7 @@
                 </div>
 
                 <div class="input-div btn">
-                    <input type="submit" value="Submit" />
+                    <input id="submit" type="submit" value="Submit" />
                 </div>
                 
                 </fieldset>
